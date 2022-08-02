@@ -1,0 +1,58 @@
+@keyframes flash {
+  0% {
+    background-color: #2f3744;
+  }
+  50% {
+    background-color: red;
+    color: white;
+  }
+  100% {
+    background-color: #2f3744;
+    color: #111;
+  }
+}
+
+@font-face {
+  font-family: "Eurostile-Demi";
+  src: url("eurostile-demi.woff2");
+}
+
+.background {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #2f3744;
+  z-index: 50;
+}
+
+.unauthorized {
+  animation: flash 1s step-start infinite;
+  width: 75%;
+  padding: 30px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 5vw;
+  font-weight: bold;
+  font-family: "Eurostile-Demi";
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.pi {
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.2rem;
+  font-family: "Arial";
+  bottom: 4px;
+  right: 10px;
+}
